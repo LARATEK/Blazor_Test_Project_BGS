@@ -4,6 +4,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BGS", "BGS.csproj", "{441DB979-AEED-44C6-90F5-FE1E753A0E4D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5EEA6404-8FC2-49DE-BCAA-550F7D0DA2BD} = {5EEA6404-8FC2-49DE-BCAA-550F7D0DA2BD}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "..\Models\Models.csproj", "{3F9C6521-93FC-4C42-95C6-32154945848D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstractions", "..\Abstractions\Abstractions.csproj", "{5EEA6404-8FC2-49DE-BCAA-550F7D0DA2BD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3F9C6521-93FC-4C42-95C6-32154945848D} = {3F9C6521-93FC-4C42-95C6-32154945848D}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Migrations", "Migrations", "{36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}"
+	ProjectSection(SolutionItems) = preProject
+		001_init_bg_database.sql = 001_init_bg_database.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Storage", "..\Storage\Storage.csproj", "{410E5422-4607-4E18-A62F-6C30188D8732}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +32,23 @@ Global
 		{441DB979-AEED-44C6-90F5-FE1E753A0E4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{441DB979-AEED-44C6-90F5-FE1E753A0E4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{441DB979-AEED-44C6-90F5-FE1E753A0E4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F9C6521-93FC-4C42-95C6-32154945848D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F9C6521-93FC-4C42-95C6-32154945848D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F9C6521-93FC-4C42-95C6-32154945848D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F9C6521-93FC-4C42-95C6-32154945848D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EEA6404-8FC2-49DE-BCAA-550F7D0DA2BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EEA6404-8FC2-49DE-BCAA-550F7D0DA2BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EEA6404-8FC2-49DE-BCAA-550F7D0DA2BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EEA6404-8FC2-49DE-BCAA-550F7D0DA2BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{410E5422-4607-4E18-A62F-6C30188D8732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{410E5422-4607-4E18-A62F-6C30188D8732}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{410E5422-4607-4E18-A62F-6C30188D8732}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{410E5422-4607-4E18-A62F-6C30188D8732}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32C4C037-C799-47CD-A6C1-3ECA5FC0AC01}
 	EndGlobalSection
 EndGlobal
