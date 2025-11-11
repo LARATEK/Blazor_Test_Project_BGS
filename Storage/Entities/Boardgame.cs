@@ -1,6 +1,6 @@
 ﻿namespace Storage;
 
-public sealed class Boardgames
+public sealed class Boardgame
 {
     public int Id { get; init; }
 

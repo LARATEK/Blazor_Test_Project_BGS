@@ -22,6 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Migrations", "Migrations", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Storage", "..\Storage\Storage.csproj", "{410E5422-4607-4E18-A62F-6C30188D8732}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "..\Logic\Logic.csproj", "{806A5AA1-1A7E-4538-83C7-15BED6A1BD77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{410E5422-4607-4E18-A62F-6C30188D8732}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{410E5422-4607-4E18-A62F-6C30188D8732}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{410E5422-4607-4E18-A62F-6C30188D8732}.Release|Any CPU.Build.0 = Release|Any CPU
+		{806A5AA1-1A7E-4538-83C7-15BED6A1BD77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{806A5AA1-1A7E-4538-83C7-15BED6A1BD77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{806A5AA1-1A7E-4538-83C7-15BED6A1BD77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{806A5AA1-1A7E-4538-83C7-15BED6A1BD77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

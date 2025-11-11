@@ -1,0 +1,22 @@
+﻿@page "/"
+@inject IUnitOfWork unitOfWork
+
+<div class="grid">
+    @foreach (var boardgame in Boardgames)//TODO:выделить в отдельный компонент настолку. Чтобы в предзаказах и желаемое тоже закинуть
+    {
+        <div class="card shadow" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">@boardgame.Name.Value</h5>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    protected override void OnInitialized()
+    {
+        Boardgames = unitOfWork.BoardgameRepository.GetBoardgames();
+    }
+
+    private IEnumerable<Boardgame> Boardgames;
+}

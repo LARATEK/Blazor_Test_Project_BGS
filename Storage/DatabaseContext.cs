@@ -4,7 +4,7 @@ namespace Storage;
 
 public sealed class DatabaseContext : DbContext
 {
-    public DbSet<Boardgames> Boardgames { get; set; }
+    public DbSet<Boardgame> Boardgames { get; set; }
 
     public DatabaseContext(DbContextOptions<DatabaseContext> options) 
         : base(options) { }
@@ -13,10 +13,10 @@ public sealed class DatabaseContext : DbContext
     {
         ArgumentNullException.ThrowIfNull(modelBuilder);
 
-        modelBuilder.Entity<Boardgames>()
+        modelBuilder.Entity<Boardgame>()
             .HasKey(x => x.Id);
 
-        modelBuilder.Entity<Boardgames>()
+        modelBuilder.Entity<Boardgame>()
             .Property(x => x.Id)
             .ValueGeneratedOnAdd();
     }

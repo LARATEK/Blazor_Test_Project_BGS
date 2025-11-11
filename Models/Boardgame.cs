@@ -6,7 +6,7 @@ public sealed class Boardgame   //TODO:допы будут наследнико�
 
     public EntityName Name { get; init; }
 
-    Boardgame(
+    public Boardgame(
         EntityId<Boardgame> id, //TODO: посмотреть как на работе это делается
         EntityName name)
     {
